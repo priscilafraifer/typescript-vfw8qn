@@ -93,3 +93,22 @@ const appType: HTMLElement = document.getElementById('app7');
 appVoid.innerHTML = `
 <h1>Type assertions</h1>
 `;
+
+function sum(n1: number, n2: number): number {
+  return n1 + n2;
+}
+
+function fullName(pessoa: { name: string; lastname: string }): string {
+  return pessoa.name + '' + pessoa.lastname;
+}
+
+const appFunction: HTMLElement = document.getElementById('app8');
+appFunction.innerHTML = `
+<h1>Functions</h1>
+<h2>Soma de 2 e 3: ${sum(2, 3)}</h2>
+<h2>Soma de 11 e 329: ${sum(11, 329)}</h2>
+<h2>Meu nome completo: ${fullName({
+  lastname: 'Fraifer',
+  name: 'Priscila Vieira',
+})}</h2>
+`;
