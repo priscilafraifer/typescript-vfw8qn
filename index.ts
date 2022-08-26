@@ -91,6 +91,5 @@ let strValue2: number = (someValue2 as string).length;
 
 const appType: HTMLElement = document.getElementById('app7');
 appVoid.innerHTML = `
-
 <h1>Type assertions</h1>
 `;
