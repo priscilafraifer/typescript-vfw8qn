@@ -82,3 +82,15 @@ appVoid.innerHTML = `
 //appObj.innerHTML = `
 //<h1>Object</h1>
 //`;
+
+let someValue: any = 'this is a string';
+let strLenght: number = (<string>someValue).length;
+
+let someValue2: any = 'this is a string';
+let strValue2: number = (someValue2 as string).length;
+
+const appType: HTMLElement = document.getElementById('app7');
+appVoid.innerHTML = `
+
+<h1>Type assertions</h1>
+`;
