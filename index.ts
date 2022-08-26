@@ -69,3 +69,16 @@ appVoid.innerHTML = `
 <h2>unusable: ${unusable}</h2>
 <h2>myFunction: ${myFunction}</h2>
 `;
+
+//declare function create(o: object | null): void;
+//create({ prop: 0 }); //ok
+//create(null); //ok
+//create (42); Erro
+//create("string"); //Erro
+//create(false); //Erro
+//create(undefined); //Ok
+
+//const appObj: HTMLElement = document.getElementById('app6');
+//appObj.innerHTML = `
+//<h1>Object</h1>
+//`;
