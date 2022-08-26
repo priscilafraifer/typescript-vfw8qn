@@ -112,3 +112,25 @@ appFunction.innerHTML = `
   name: 'Priscila Vieira',
 })}</h2>
 `;
+
+let title: string = 'Olá Mundo!';
+let paragraph: string = 'Blablabla...';
+
+let counter = 0;
+
+let intervalId = setInterval(() => {
+  counter = counter + 1;
+  const appP: HTMLElement = document.getElementById('app.p');
+  appP.innerHTML = 'Contador: ' + counter;
+}, 1000);
+
+const btn = document.getElementById('app.btn');
+btn?.addEventListener('click', alertMethod);
+function alertMethod(this: HTMLElement, ev: Event) {
+  alert('Alertando com typscript');
+}
+
+//Write TypeScript code!
+
+const appH1: HTMLElement = document.getElementById('app.h1');
+appH1.innerHTML = title;
